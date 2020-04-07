@@ -30,3 +30,17 @@ context.strokeStyle = "red";
 context.moveTo(canvasWidth - canvasWidth, canvasHeight)
 context.lineTo(canvasWidth,canvasHeight - canvasHeight);
 context.stroke();
+
+var positionX = 150;
+var positionY = 225;
+var size = 150;
+
+context.beginPath();
+context.moveTo(positionX, positionY);
+context.lineTo(positionX + size, positionY);
+context.lineTo(positionX + size / 2, positionY - size);
+context.lineTo(positionX, positionY);
+context.strokeStyle = "rgba(128,128,128,.5)";
+context.stroke();
+context.fillStyle = "black";
+context.fill();
