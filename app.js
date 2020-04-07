@@ -44,3 +44,15 @@ context.strokeStyle = "rgba(128,128,128,.5)";
 context.stroke();
 context.fillStyle = "black";
 context.fill();
+
+context.beginPath();
+context.moveTo(canvasWidth / 2,canvasHeight - canvasHeight);
+context.lineTo(canvasWidth / 2,canvasHeight);
+context.strokeStyle = "green";
+context.stroke();
+
+context.beginPath();
+context.moveTo(canvasWidth - canvasWidth,canvasHeight / 2);
+context.lineTo(canvasWidth,canvasHeight / 2);
+context.strokeStyle = "red";
+context.stroke();
