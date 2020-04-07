@@ -18,3 +18,15 @@ context.fillRect (PositionX,PositionY,width,height);
 
 context.fillStyle = "green";
 context.fillRect (PositionX,PositionY + height,width,height);
+
+context.beginPath();
+context.strokeStyle = "red";
+context.moveTo(canvasWidth - canvasWidth, canvasHeight - canvasHeight)
+context.lineTo(canvasWidth,canvasHeight);
+context.stroke();
+
+context.beginPath();
+context.strokeStyle = "red";
+context.moveTo(canvasWidth - canvasWidth, canvasHeight)
+context.lineTo(canvasWidth,canvasHeight - canvasHeight);
+context.stroke();
